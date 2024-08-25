@@ -20,8 +20,8 @@ android {
     }
 
     compileOptions {
-        targetCompatibility = JavaVersion.VERSION_21
-        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_11
     }
 
     publishing {
@@ -92,6 +92,6 @@ signing {
 
 
 dependencies {
-    compileOnly(libs.annotation)
+    compileOnly("androidx.annotation:annotation:1.6.0")
     lintPublish(project(":checks"))
 }
